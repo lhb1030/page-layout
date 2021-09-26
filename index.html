@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HB Self Management">
+  <meta name="author" content="HB">
+  <meta name="viewport" content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Harry Shop</title>
+
+  <!----------------------------------------------->
+
+  <!-- favicon -->
+  <link rel="icon" href="img/blog-icon.ico">
+  <!-- favicon 아이폰 -->
+  <link rel="apple-touch-icon" href="img/blog-icon.ico">
+  <!-- favicon ie -->
+  <link rel="short icon" type="image/x-icon" href="img/blog-icon.ico">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- font-family: Pretendard -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+  <!-- font-family: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/7f56f43cae.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+
+</head>
+
+<body>
+  <aside>
+    <div class="sidebar-container" id="sidebar-container">
+      <div class="sidebar-logo-content">
+        <div class="logo">
+          <i class="fas fa-smile"></i>
+          <div class="logo_name">HB Shop</div>
+        </div>
+        <i class="fas fa-bars" id="btn"></i>
+        <hr class="hr-line">
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="#">
+            <i class="fas fa-columns"></i>
+            <span class="li_name">Dashboard</span>
+          </a>
+        </li>
+        <hr class="hr-line-top">
+        <li>
+          <a href="#">
+            <i class="far fa-folder-open"></i>
+            <span class="li_name">Menu1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-folder-open"></i>
+            <span class="li_name">Menu2</span>
+          </a>
+        </li>
+        <hr class="hr-line-top">
+        <li>
+          <a href="#">
+            <i class="far fa-folder-open"></i>
+            <span class="li_name">Menu3</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-folder-open"></i>
+            <span class="li_name">Menu4</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <head>
+    <div class="inner">
+      <div class="head-container" id="head-container">
+        <div class="head-left">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button class="btn btn-sm btn-secondary" type="button" id="button-addon2">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="head-right">
+          <div class="profile">
+            <span>hyebin lee</span>
+            <div class="border"></div>
+            <a href="#">
+              <i class="fas fa-user-circle"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </head>
+  <section>
+    <div class="inner">
+      <div class="main-content" id="main-content">
+
+        <div class="text">Dashboard</div>
+        
+        <div class="manage-container" id="manage-container">
+
+          <div class="item manage mt1">
+            <div class="manage-title" >
+              <div class="main">TOTAL ORDER</div>
+              <div class="sub">739</div>
+            </div>
+            <i class="fas fa-shopping-cart order-i"></i>
+          </div>
+          <div class="item manage mt2">
+            <div class="manage-title">
+              <div class="main">CONVERSION RATE</div>
+              <div class="sub">32.5%</div>
+            </div>
+            <i class="fas fa-undo-alt rate-i"></i>
+          </div>
+          <div class="item manage mt3">
+            <div class="manage-title">
+              <div class="main">EARNINGS (MONTHLY)</div>
+              <div class="sub">$12,560</div>
+            </div>
+            <i class="fas fa-calendar-minus monthly-i"></i>
+          </div>
+          <div class="item manage mt4">
+            <div class="manage-title">
+              <div class="main">EARNINGS (ANNUAL)</div>
+              <div class="sub">$56,970</div>
+            </div>
+            <i class="fas fa-dollar-sign annual-i"></i>
+          </div>
+      </div>
+
+      <hr class="middle-hr">
+
+      <div class="second-container" id="second-container">
+        <div class="top-product">
+          <div class="top-title">TOP6 Product</div>
+
+          <div class="top-items">
+
+            <div class="top-item">
+              <img src="img/1.jpg" class="item-img">
+              <div class="top-item-detail">
+                <p class="item-name">Orijen6 Fish Cat 5.4kg</p>
+                <p class="item-cate">Cat Food (Dry)</p>
+              </div>
+              <div class="top-item-price">
+                <p class="item-sales">Sales</p>
+                <p class="item-price">$63</p>
+              </div>
+            </div>
+            <div class="top-item">
+              <img src="img/2.jpg" class="item-img">
+              <div class="top-item-detail">
+                <p class="item-name">EVER CLEAN ES UN 19kg</p>
+                <p class="item-cate">Cat Sand</p>
+              </div>
+              <div class="top-item-price">
+                <p class="item-sales">Sales</p>
+                <p class="item-price">$43</p>
+              </div>
+            </div>
+            <div class="top-item">
+              <img src="img/3.jpg" class="item-img">
+              <div class="top-item-detail">
+                <p class="item-name">ZIWI Peak MACKEREL RECIPE 185g</p>
+                <p class="item-cate">Cat Food (Wet)</p>
+              </div>
+              <div class="top-item-price">
+                <p class="item-sales">Sales</p>
+                <p class="item-price">$4.5</p>
+              </div>
+            </div>
+            <div class="top-item">
+              <img src="img/4.jpg" class="item-img">
+              <div class="top-item-detail">
+                <p class="item-name">ACANA Pacifica Cat 4.5kg + 1.8kg</p>
+                <p class="item-cate">Cat Food (Dry)</p>
+              </div>
+              <div class="top-item-price">
+                <p class="item-sales">Sales</p>
+                <p class="item-price">$52</p>
+              </div>
+            </div>
+            <div class="top-item">
+              <img src="img/5.jpg" class="item-img">
+              <div class="top-item-detail">
+                <p class="item-name">CIAO Churu Maguro 10ea</p>
+                <p class="item-cate">Cat Snack (Wet)</p>
+              </div>
+              <div class="top-item-price">
+                <p class="item-sales">Sales</p>
+                <p class="item-price">$13.4</p>
+              </div>
+            </div>
+            <div class="top-item">
+              <img src="img/6.jpg" class="item-img">
+              <div class="top-item-detail">
+                <p class="item-name">ROYAL CANIN Mother&Baby Cat 4kg</p>
+                <p class="item-cate">Cat Food (Dry)</p>
+              </div>
+              <div class="top-item-price">
+                <p class="item-sales">Sales</p>
+                <p class="item-price">$38.2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-chart">
+          <div class="top-title">Revenue Sources</div>
+          <div class="canvas">
+            <canvas id="myChart" style="height:49vh; width:53vw" ></canvas>
+          </div>
+        </div>
+
+        <div class="top-progress">
+          <div class="top-title">Progress</div>
+            <div class="progress-set">
+              <span>Server Migration</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-set">
+              <span>Sales Tracking</span>
+              <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-set">
+              <span>Customer Database</span>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-set">
+              <span>Payout Details</span>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/chart.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
